@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Open+Sans:wght@600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+    
+}
+
+body{
+    background-color: rgba(206, 135, 13, 0.24);
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(2, 112, 108, 0.386);
+    border-radius: 5px;
+    padding:0 10px;
+    font-family: "Lora", serif;
+    font-weight: 600;
+}
+
+header .logo:hover{
+    color: rgba(2, 112, 108, 0.386);
+    background: #fff;
+    transition: 0.5s;
+}
+
+header .navbar{
+    position: relative;
+    display: flex;
+}
+
+header .navbar li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navbar li a{
+    text-decoration: none;
+    color: rgba(2, 112, 108, 0.386);
+    font-weight: 600;
+    /*padding: 0px;*/
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+header .navbar li a:hover{
+    border-bottom: 5px solid #fff;
+    padding: 2px;
+    transition: 0.2s;
+}
+
+/* Contenido de la Web */
+
+.contenido{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.contenido .tituloBox{
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contenido .tituloBox h2{
+    font-size: 4.5em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.contenido .tituloBox h2 span{
+    background: rgba(2, 112, 108, 0.386);
+    color: #fff;
+    padding: 0 10px;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.contenido .tituloBox p{
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: #fff;
+    font-family: "Lora", serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contenido .tituloBox a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(2, 112, 108, 0.386);
+    background: #fff;
+    padding: 10px 20px;
+    margin: left 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+}
+
+.contenido .tituloBox a:hover{
+    color: #fff;
+    background: rgba(2, 112, 108, 0.386);
+    transition: 0.5s;
+}
+
+.contenido .imgBox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+    z-index: -5;
+}
+
+.contenido .imgBox img{
+    max-width: 100%;  
+    height: auto;  
+}
+
+.contenido .imgBox img:hover{
+    height: 80vh;
+}
+
+/* Copyright */
+
+.copyright{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+}
+
+.copyright p{
+    color: #fff;
+    text-align: center;
+    margin-left: 100px;
+}
+
+/* Redes Sociales */
+
+.redesSociales {
+    position: absolute;
+    right: 0px;
+    bottom: 50px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 30px;
+    list-style: none;
+    z-index: 10;
+}
+
+.redesSociales li{
+    padding: 10px;
+}
+
+.redesSociales li a{
+    color: #fff;
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
+.redesSociales li:hover a{
+    color: rgba(2, 112, 108, 0.386);
+}
+
+.circulo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(2, 112, 108, 0.386);
+    clip-path: circle(650px at right 800px);
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+}
+
+/* FORMULARIO */
+
+.imagenformulario{
+    background-image: url(../img/gato.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cabeceraform{
+    text-align: center;
+    margin: auto;
+    height: 80px;
+    margin-top: 25px;
+}
+
+.contacto{
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    background-color: rgba(2, 112, 108, 0.386);
+    font-size: 2rem;
+    padding: 0.3rem;
+}
+
+.contacto:hover{
+    transition: 0.5s;
+    background-color: #fff;
+    color: rgba(2, 112, 108, 0.386);
+}
+
+.formulario{
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+    width: 500px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    background-color: rgba(2, 112, 108, 0.5);
+}
+
+input{
+    margin-bottom: 10px;
+    margin-top: 6px;
+    border: 0px ;
+    width: 300px;
+}
+
+label{
+    font-size: 20px;
+}
+
+textarea{
+    width: 300px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 0px;
+}
+
+.buttonform{
+    color: rgba(2, 112, 108, 0.386);
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 5px;
+    border:0px solid;
+    width: 100px;
+    height: 30px;
+}
+
+.buttonform:hover{
+    color: #fff;
+    background-color: rgba(2, 112, 108, 0.386);
+    transition: 0.5s;
+}
+
+.strvolver{
+    text-align: center;
+    margin: auto;
+    height: 80px;
+    margin-top: 35px;
+}
+
+.volverhome{
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    background-color: rgba(2, 112, 108, 0.386);
+    font-size: 1.5rem;
+    padding: 0.3rem;
+}
+
+.volverhome:hover{
+    transition: 0.5s;
+    background-color: #fff;
+    color: rgba(2, 112, 108, 0.386);
+}
+
+/* PROYECTOS */
+
+.imagenproyectos{
+    background-image: url(../img/gato.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.divcabecera{
+    text-align: center;
+    margin: auto;
+    height: 80px;
+    margin-top: 25px;
+   
+}
+.buttoncabecera{
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    background-color: rgba(2, 112, 108, 0.386);
+    font-size: 2rem;
+    padding: 0.3rem;
+}
+
+.buttoncabecera:hover{
+    color: rgba(2, 112, 108, 0.386);
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+thead{
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.tablas{
+    text-align: center;
+    margin: auto;
+    height: 80px;
+    margin-top: 25px;
+}
+
+.proyecto1{
+    width: 500px;
+    height: 300px;
+    margin-bottom: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    background-color: rgba(2, 112, 108, 0.5);
+    border-spacing: 0px;
+
+}
+
+td{
+    border: 2px solid #fff;
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+    padding: 5px;
+}
+
+/* cv */
+
+.imagencv{
+    background-image: url(../img/gato.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.tablascv{
+    border: 3px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(2, 112, 108, 0.5);
+    width: 600px;
+    margin: auto;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.links{
+    text-decoration: none;
+    color: rgba(76, 44, 13, 0.7);
+}
+
+/* Por falta de tiempo no he realizado el responsive de la web */
